@@ -1,0 +1,22 @@
+{
+  "name": "try-fp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "browser-sync start --server --files 'src'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/try-fp.git"
+  },
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/try-fp/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/try-fp#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

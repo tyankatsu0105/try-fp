@@ -1,7 +1,11 @@
-import {Student} from './Student'
+import {set, view, lensProp} from 'ramda'
+import {Person} from './Person'
 
-const tyankatsu = new Student('yamamoto', 'katsuya', '111-1111', 'seinan');
-tyankatsu.address = 'japan'
-tyankatsu.birthYear = '1994'
+const person = new Person('Alonzo', 'Church', '44-44-4444');
 
-console.log(tyankatsu.toString());
+const lastnameLens = lensProp('_lastname');
+
+// console.log(view(lastnameLens, person));
+
+const newPerson = set(lastnameLens, 'Mourning', person);
+console.log(newPerson);

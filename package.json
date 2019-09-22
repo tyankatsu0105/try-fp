@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/tyankatsu0105/try-fp#readme",
   "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
     "immer": "^4.0.0",
+    "ramda": "^0.26.1",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"

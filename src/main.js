@@ -1,13 +1,7 @@
-class Fn {
-  constructor(name){
-    this.name = name;
-  }
-  getName() {
-    console.log(this.name);
-    
-  }
-}
+import {Student} from './Student'
 
-const hoge = new Fn('ky')
+const tyankatsu = new Student('yamamoto', 'katsuya', '111-1111', 'seinan');
+tyankatsu.address = 'japan'
+tyankatsu.birthYear = '1994'
 
-hoge.getName();
+console.log(tyankatsu.toString());

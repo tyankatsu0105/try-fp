@@ -1,11 +1,10 @@
-import {set, view, lensProp} from 'ramda'
-import {Person} from './Person'
+const array = [1,5,2,4,7,2,90,100,23];
 
-const person = new Person('Alonzo', 'Church', '44-44-4444');
+// const sortedArr = array.sort()
+const sortedArr = [...array].sort((a,b) => {
+  if(a > b) return 1;
+  if(a < b) return -1;
+})
 
-const lastnameLens = lensProp('_lastname');
-
-// console.log(view(lastnameLens, person));
-
-const newPerson = set(lastnameLens, 'Mourning', person);
-console.log(newPerson);
+console.log(sortedArr);
+console.log(array);

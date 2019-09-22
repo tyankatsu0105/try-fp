@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "browser-sync start --server --files 'src'"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/tyankatsu0105/try-fp#readme",
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "immer": "^4.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   }
 }
